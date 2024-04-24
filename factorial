@@ -1,0 +1,20 @@
+
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+class Addition
+{
+
+    static void Main(string[] args)
+    {
+        int fact = 1;
+        int num, i;
+        Console.WriteLine("Enter the number whosse factorial you wish to calculate");
+        num = Convert.ToInt32(Console.ReadLine());
+        for (i = 1; i <= num; fact *= i++) ;
+        Console.WriteLine("Factorial:" + fact);
+    }
+
+
+}
+
